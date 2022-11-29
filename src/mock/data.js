@@ -24,6 +24,26 @@ export const aboutData = {
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
+// TECH DATA
+export const techData = [
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'test',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'test',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
+];
+
 // PROJECTS DATA
 export const projectsData = [
   {
@@ -89,14 +109,6 @@ export const footerData = {
 };
 
 
-export const techData = {
-  id: nanoid(),
-  img: 'project.jpg',
-  title: '',
-  info: '',
-  info2: '',
-  url: ''
-}
 
 // Github start/fork buttons
 export const githubButtons = {

@@ -7,7 +7,7 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
 const Tech = () => {
-  const { techData } = useContext(PortfolioContext)
+  const { tech } = useContext(PortfolioContext);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -21,13 +21,15 @@ const Tech = () => {
     }
   }, []);
 
+  console.log("tech in Tech.jsx: ", tech)
+
   return (
     <section id="tech">
       <Container>
         <div className="tech-wrapper">
           <Title title="Tech" />
-          {techData.map((tech) => {
-            const { title, info, info2, url, img } = tech;
+         {tech.map((stack) => {
+            const { id, img, title, info, info2, url } = stack;
 
             return (
               <Row key={id}>
