@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
+import Tech from './Tech/Tech';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
@@ -28,6 +29,7 @@ function App() {
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Hero />
       <About />
+      <Tech />
       <Projects />
       <Contact />
       <Footer />

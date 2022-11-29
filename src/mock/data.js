@@ -88,6 +88,16 @@ export const footerData = {
   ],
 };
 
+
+export const techData = {
+  id: nanoid(),
+  img: 'project.jpg',
+  title: '',
+  info: '',
+  info2: '',
+  url: ''
+}
+
 // Github start/fork buttons
 export const githubButtons = {
   isEnabled: false,
