@@ -27,8 +27,51 @@ const Tech = () => {
     <section id="tech">
       <Container>
         <div className="tech-wrapper">
+          <Title title="tech" />
+          {tech.map((stack) => {
+            const {id, img} = stack;
+            return (
+              <Container>
+                <Row key={id}>
+                  <Col lg={8} sm={12}>
+                    <Fade
+                      right={isDesktop}
+                      bottom={isMobile}
+                      duration={1000}
+                      delay={1000}
+                      distance="30px"
+                    >
+                      <div className="technology-wrapper__image">
+                       
+                          <Tilt
+                            options={{
+                              reverse: false,
+                              max: 8,
+                              perspective: 1000,
+                              scale: 1,
+                              speed: 300,
+                              transition: true,
+                              axis: null,
+                              reset: true,
+                              easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            }}
+                          >
+                            <div data-tilt className="thumbnail rounded">
+                              <ProjectImg  filename={img} />
+                            </div>
+                          </Tilt>
+                   
+                      </div>
+                    </Fade>
+                  </Col>
+                </Row>
+              </Container>
+            )
+          })
+
+          }
           <Title title="Tech" />
-         {tech.map((stack) => {
+          {tech.map((stack) => {
             const { id, img, title, info, info2, url } = stack;
 
             return (
