@@ -1,19 +1,16 @@
 module.exports = {
-  extends: ['airbnb', 'prettier'],
-  plugins: ['prettier'],
+  extends: ["airbnb", "prettier"],
+  plugins: ["prettier"],
   env: {
     browser: true,
     es6: true,
   },
   rules: {
-    'import/no-extraneous-dependencies': 'off',
-    'prettier/prettier': 'error',
-    'no-console': 'warn',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-filename-extension': 'off', // disable if necessary
-    'react/static-property-placement': 'off', // disable if necessary
-    'react/jsx-props-no-spreading': 'off', // disable if necessary
-    'react/require-default-props': 'off',
+    "import/no-extraneous-dependencies": "off",
+    "prettier/prettier": "off",
+    "no-console": "warn",
+    "react/static-property-placement": "off", // disable if necessary
+    "react/require-default-props": "off",
     "quotes": [1, "double"],
     "quote-props": "off",
     "semi": [0, "never"],
@@ -36,7 +33,7 @@ module.exports = {
 
   },
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: "@babel/eslint-parser",
     requireConfigFile: false,
     babelOptions: {
       babelrc: false,
