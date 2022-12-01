@@ -28,12 +28,12 @@ const Tech = () => {
       <Container>
         <div className="tech-wrapper">
           <Title title="tech" />
-          {tech.map((stack) => {
-            const {id, img} = stack;
-            return (
-              <Container>
-                <Row key={id}>
-                  <Col lg={8} sm={12}>
+            <Container>
+              <Row >
+              {tech.map((stack) => {
+                const {id, img} = stack;
+                return (
+                  <Col key={id} xs={3}>
                     <Fade
                       right={isDesktop}
                       bottom={isMobile}
@@ -42,34 +42,38 @@ const Tech = () => {
                       distance="30px"
                     >
                       <div className="technology-wrapper__image">
-                       
-                          <Tilt
-                            options={{
-                              reverse: false,
-                              max: 8,
-                              perspective: 1000,
-                              scale: 1,
-                              speed: 300,
-                              transition: true,
-                              axis: null,
-                              reset: true,
-                              easing: 'cubic-bezier(.03,.98,.52,.99)',
-                            }}
-                          >
-                            <div data-tilt className="thumbnail rounded">
-                              <ProjectImg  filename={img} />
-                            </div>
-                          </Tilt>
-                   
+                        <Tilt
+                          options={{
+                            reverse: false,
+                            max: 8,
+                            perspective: 1000,
+                            scale: 1,
+                            speed: 300,
+                            transition: true,
+                            axis: null,
+                            reset: true,
+                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                          }}
+                        >
+                          <div data-tilt className="thumbnail rounded">
+                            <ProjectImg  filename={img} />
+                          </div>
+                        </Tilt>
                       </div>
                     </Fade>
                   </Col>
-                </Row>
-              </Container>
-            )
-          })
+                )
+              })}
+              </Row>
+            </Container>
+        </div>
+      </Container>
 
-          }
+
+
+
+      <Container>
+        <div className="tech-wrapper">
           <Title title="Tech" />
           {tech.map((stack) => {
             const { id, img, title, info, info2, url } = stack;

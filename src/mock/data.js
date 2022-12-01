@@ -42,6 +42,22 @@ export const techData = [
     info2: 'test',
     url: 'https://www.github.com',
   },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'test',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'test',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
 ];
 
 // PROJECTS DATA

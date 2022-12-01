@@ -15,5 +15,14 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off', // disable if necessary
     'react/require-default-props': 'off',
   },
-  parser: 'babel-eslint',
+  parserOptions: {
+    parser: '@babel/eslint-parser',
+    requireConfigFile: false,
+    babelOptions: {
+      babelrc: false,
+      configFile: false,
+      // your babel options
+      presets: ["@babel/preset-env"],
+    },
+  },
 };
