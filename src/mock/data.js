@@ -28,7 +28,7 @@ export const aboutData = {
 export const techData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'javascript.png',
     title: 'test',
     info: 'test',
     info2: 'test',
