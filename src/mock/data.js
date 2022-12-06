@@ -29,6 +29,30 @@ export const techData = [
   {
     id: nanoid(),
     img: 'javascript.png',
+    title: 'JavaScript',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
+  {
+    id: nanoid(),
+    img: 'react.png',
+    title: 'React',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
+  {
+    id: nanoid(),
+    img: 'css.png',
+    title: 'CSS',
+    info: 'test',
+    info2: 'test',
+    url: 'https://www.github.com',
+  },
+  {
+    id: nanoid(),
+    img: 'styled-components.png',
     title: 'test',
     info: 'test',
     info2: 'test',
@@ -36,7 +60,7 @@ export const techData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'graphql',
     title: 'test',
     info: 'test',
     info2: 'test',
@@ -44,20 +68,15 @@ export const techData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'react.svg',
     title: 'test',
     info: 'test',
     info2: 'test',
     url: 'https://www.github.com',
   },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'test',
-    info: 'test',
-    info2: 'test',
-    url: 'https://www.github.com',
-  },
+
+
+
 ];
 
 // PROJECTS DATA
