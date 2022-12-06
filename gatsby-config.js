@@ -6,10 +6,10 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     {
-    resolve: "gatsby-plugin-react-svg",
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /tech/ // See below to configure properly
+          include: /\.inline\.svg$/
         }
       }
     },
