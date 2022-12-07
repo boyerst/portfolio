@@ -5,7 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
-import Icon from '../../assets/react.inline.svg';
+
+
 
 
 const Tech = () => {
@@ -26,12 +27,14 @@ const Tech = () => {
   console.log("tech in Tech.jsx: ", tech)
 
 
+
+
+
   return (
     <section id="tech">
       <Container>
         <div className="tech-wrapper">
           <Title title="tech" /> 
-            <Icon style={{width: '100', height: '100'}}/>
             <Container>
               <Row >
               {tech.map((stack) => {
@@ -63,6 +66,7 @@ const Tech = () => {
                             <ProjectImg  filename={img} />
                           </div>
                         </Tilt>
+         
                       </div>
                     </Fade>
                   </Col>

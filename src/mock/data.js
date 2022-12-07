@@ -1,5 +1,6 @@
 import { nanoid } from 'nanoid';
 
+
 // HEAD DATA
 export const headData = {
   title: '', // e.g: 'Name | Developer'
@@ -23,6 +24,8 @@ export const aboutData = {
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
+
+
 
 // TECH DATA
 export const techData = [
@@ -60,7 +63,7 @@ export const techData = [
   },
   {
     id: nanoid(),
-    img: 'graphql',
+    img: 'graphql.png',
     title: 'test',
     info: 'test',
     info2: 'test',
@@ -68,7 +71,7 @@ export const techData = [
   },
   {
     id: nanoid(),
-    img: 'react.svg',
+    img: 'html.png',
     title: 'test',
     info: 'test',
     info2: 'test',
