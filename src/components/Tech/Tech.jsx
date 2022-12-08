@@ -24,36 +24,31 @@ const Tech = () => {
     }
   }, []);
 
-  console.log("tech in Tech.jsx: ", tech)
-
-
-
-
 
   return (
     <section id="tech">
       <Container>
         <div className="tech-wrapper">
-          <Title title="tech" /> 
+          <Title title="Tech" /> 
             <Container>
               <Row >
               {tech.map((stack) => {
-                const {id, img} = stack;
+                const {id, img, title} = stack;
                 return (
-                  <Col key={id} xs={3}>
+                  <Col key={id} lg={2}>
                     <Fade
                       right={isDesktop}
                       bottom={isMobile}
                       duration={1000}
                       delay={1000}
-                      distance="30px"
+                      distance="60px"
                     >
                       <div className="tech-wrapper__image">
                         <Tilt
                           options={{
                             reverse: false,
                             max: 8,
-                            perspective: 1000,
+                            perspective: 300,
                             scale: 1,
                             speed: 300,
                             transition: true,
@@ -62,11 +57,10 @@ const Tech = () => {
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg  filename={img} />
+                          <div data-tilt>
+                            <ProjectImg alt={title} filename={img}/>
                           </div>
                         </Tilt>
-         
                       </div>
                     </Fade>
                   </Col>
