@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+import React, { useContext, useEffect, useState } from "react";
+import Fade from "react-reveal/Fade";
+import Tilt from "react-tilt";
+import { Container, Row, Col } from "react-bootstrap";
+import PortfolioContext from "../../context/context";
+import Title from "../Title/Title";
+import ProjectImg from "../Image/ProjectImg";
 
 
 
@@ -54,7 +54,7 @@ const Tech = () => {
                             transition: true,
                             axis: null,
                             reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                            easing: "cubic-bezier(.03,.98,.52,.99)",
                           }}
                         >
                           <div data-tilt>
