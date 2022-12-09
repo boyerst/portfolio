@@ -1,3 +1,7 @@
+const a11yOff = Object.keys(require("eslint-plugin-jsx-a11y").rules)
+  .reduce((acc, rule) => { acc[`jsx-a11y/${rule}`] = "off"; return acc }, {})
+
+
 module.exports = {
   extends: ["airbnb", "prettier"],
   plugins: ["prettier"],
@@ -6,6 +10,7 @@ module.exports = {
     es6: true,
   },
   rules: {
+    ...a11yOff,
     "import/no-extraneous-dependencies": "off",
     "prettier/prettier": "off",
     "no-console": "warn",

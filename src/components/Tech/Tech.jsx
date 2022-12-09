@@ -31,11 +31,11 @@ const Tech = () => {
         <div className="tech-wrapper">
           <Title title="Tech" /> 
             <Container>
-              <Row >
+              <Row>
               {tech.map((stack) => {
                 const {id, img, title} = stack;
                 return (
-                  <Col key={id} lg={2}>
+                  <Col key={id} lg={2} md={4} xs={4}>
                     <Fade
                       right={isDesktop}
                       bottom={isMobile}
@@ -48,7 +48,7 @@ const Tech = () => {
                           options={{
                             reverse: false,
                             max: 8,
-                            perspective: 300,
+                            perspective: 200,
                             scale: 1,
                             speed: 300,
                             transition: true,

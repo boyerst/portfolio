@@ -211,7 +211,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'stephen.a.boyer@pm.me',
 };
 
 // FOOTER DATA
