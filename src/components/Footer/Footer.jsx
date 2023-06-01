@@ -40,6 +40,7 @@ const Footer = () => {
           © {new Date().getFullYear()} - Developed by{" "}
           <a href="" target="_blank" rel="noopener noreferrer"/>
         </p>
+        
         s
       </Container>
     </footer>
